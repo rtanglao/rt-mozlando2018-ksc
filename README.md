@@ -5,5 +5,6 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 * 1\. resize
 
 ```bash
+cd /home/rtanglao/GIT/rt-mozlando2018-ksc/FIFTYPERCENT
 convert '../ORIGINALS/*.jpg' -resize 50% -set filename:area '%wx%h' 'ksc-%03d-size-%[filename:area].png'
 ```
