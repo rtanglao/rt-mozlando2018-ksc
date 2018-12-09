@@ -1,3 +1,9 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 ## 09December2018 creating a rectangular graphic
+
+* 1\. resize
+
+```bash
+convert '../ORIGINALS/*.jpg' -resize 50% -set filename:area '%wx%h' 'ksc-%03d-size-%[filename:area].png'
+```
