@@ -32,7 +32,7 @@ cd ..
 montage -verbose -adjoin -tile 12x10 +frame +shadow +label -adjoin -geometry '1152x864+0+0<' @TWENTYFIVEPERCENT/1st-120files.txt 25percent-mozlando-ksc-12x10.png
 ```
 
-*4\. still over 100MB, let's try 19%
+* 5\. still over 100MB, let's try 19%
 
 ```bash
 cd /home/rtanglao/GIT/rt-mozlando2018-ksc/TENPERCENT
@@ -42,8 +42,9 @@ cd ..
 montage -verbose -adjoin -tile 12x10 +frame +shadow +label -adjoin -geometry '461x346+0+0<' @TENPERCENT/1st-120files.txt ten-percent-mozlando-ksc-12x10.png
 ```
 
-*4\. 12x10 seems to be wrong, let's try 10x12
+* 6\. 12x10 seems to be wrong, let's try 10x12
 
 ```bash
 montage -verbose -adjoin -tile 10x12 +frame +shadow +label -adjoin -geometry '461x346+0+0<' @TENPERCENT/1st-120files.txt ten-percent-mozlando-ksc-10x12.png
+```
 
