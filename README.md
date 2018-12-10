@@ -6,7 +6,7 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
 ```bash
 cd /home/rtanglao/GIT/rt-mozlando2018-ksc/FIFTYPERCENT
-convert '../ORIGINALS/*.jpg' -resize 50% -set filename:area '%wx%h' 'ksc-%03d-size-%[filename:area].png'
+convert '../ORIGINALS/*.jpg' -resize 50% -set filename:area '%wx%h' 'ksc-%03d-size-%[filename:area].png' #originals come from flickr set and i deleted the vertical ones !
 ```
 
 * 2\. get 120 files
