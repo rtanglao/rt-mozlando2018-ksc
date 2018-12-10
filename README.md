@@ -41,3 +41,9 @@ ls -d1 $PWD/* | head -120 >1st-120files.txt
 cd ..
 montage -verbose -adjoin -tile 12x10 +frame +shadow +label -adjoin -geometry '461x346+0+0<' @TENPERCENT/1st-120files.txt ten-percent-mozlando-ksc-12x10.png
 ```
+
+*4\. 12x10 seems to be wrong, let's try 10x12
+
+```bash
+montage -verbose -adjoin -tile 10x12 +frame +shadow +label -adjoin -geometry '461x346+0+0<' @TENPERCENT/1st-120files.txt ten-percent-mozlando-ksc-10x12.png
+
