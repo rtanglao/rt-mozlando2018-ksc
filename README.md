@@ -30,4 +30,14 @@ convert '../ORIGINALS/*.jpg' -resize 25% -set filename:area '%wx%h' 'ksc-%03d-si
 ls -d1 $PWD/* | head -120 >1st-120files.txt
 cd ..
 montage -verbose -adjoin -tile 12x10 +frame +shadow +label -adjoin -geometry '1152x864+0+0<' @TWENTYFIVEPERCENT/1st-120files.txt 25percent-mozlando-ksc-12x10.png
+```
 
+*4\. still over 100MB, let's try 15%
+
+```bash
+cd /home/rtanglao/GIT/rt-mozlando2018-ksc/TENPERCENT
+convert '../ORIGINALS/*.jpg' -resize 10% -set filename:area '%wx%h' 'ksc-%03d-size-%[filename:area].png'
+ls -d1 $PWD/* | head -120 >1st-120files.txt
+cd ..
+montage -verbose -adjoin -tile 12x10 +frame +shadow +label -adjoin -geometry '400x340+0+0<' @TWENTYFIVEPERCENT/1st-120files.txt ten-percent-mozlando-ksc-12x10.png
+```
