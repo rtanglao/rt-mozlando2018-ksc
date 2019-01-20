@@ -1,5 +1,11 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
+
+## 20January2019 creating a Zazzle / Art of Where tights 3325px x 6358px for one leg
+
+* 3325 / 5 px = 665 rows one way
+* 6358 -> 6370 / 5 px = 1274 rows the other way
+
 ## 09December2018 creating a rectangular graphic
 
 * 1\. resize
