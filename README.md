@@ -7,8 +7,8 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 * 6358 -> 6370 / 5 px = 1274 rows the other way "vertically"
 * each original is 4608 x 3456 px
 * round down to 4605 x 3455 px
-  * which means there are 921 5x columns horizontally
-  * and 691 rows vertically
+  * which means there are 921 five pixel columns horizontally
+  * and 691 five pixel rows vertically
 * use the imagemagick ```crop``` commmand with the ```+repage``` option 
 see: http://www.imagemagick.org/Usage/crop/#crop_repage
 e.g.
