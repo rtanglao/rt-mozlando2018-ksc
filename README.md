@@ -12,10 +12,15 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 * use the imagemagick ```crop``` commmand with the ```+repage``` option 
 see: http://www.imagemagick.org/Usage/crop/#crop_repage
 e.g.
+
 ```bash
   convert rose: -crop 40x30+40+30  +repage  repage_br.gif
   ```
-
+  
+  * in our case something like:
+```bash
+  convert <ksc_img> -crop 5x5+<random_x>+<random_y>  +repage  5x5-ksc.png
+  ```
 
 ## 09December2018 creating a rectangular graphic
 
