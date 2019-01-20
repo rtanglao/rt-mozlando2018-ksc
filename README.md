@@ -3,8 +3,12 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
 ## 20January2019 creating a Zazzle / Art of Where tights 3325px x 6358px for one leg
 
-* 3325 / 5 px = 665 rows one way
-* 6358 -> 6370 / 5 px = 1274 rows the other way
+* 3325 / 5 px = 665 rows one way i.e. "horizontally"
+* 6358 -> 6370 / 5 px = 1274 rows the other way "vertically"
+* each original is 4608 x 3456 px
+* round down to 4605 x 3455 px
+  * which means there are 921 5x columns horizontally
+  * and 691 rows vertically
 
 ## 09December2018 creating a rectangular graphic
 
