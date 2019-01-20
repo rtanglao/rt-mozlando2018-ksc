@@ -9,6 +9,13 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 * round down to 4605 x 3455 px
   * which means there are 921 5x columns horizontally
   * and 691 rows vertically
+* use the imagemagick ```crop``` commmand with the ```+repage``` option 
+see: http://www.imagemagick.org/Usage/crop/#crop_repage
+e.g.
+```bash
+  convert rose: -crop 40x30+40+30  +repage  repage_br.gif
+  ```
+
 
 ## 09December2018 creating a rectangular graphic
 
