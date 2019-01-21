@@ -14,8 +14,8 @@ ARGF.each_line do |file|
   files.push(file.chomp)
 end
 files.shuffle!
-logger.debug files[0]
-logger.debug files[-1]
+#logger.debug files[0]
+#logger.debug files[-1]
 # 3325 / 5 px = 665 rows one way i.e. "horizontally"
 # 6358 -> 6370 / 5 px = 1274 rows the other way "vertically"
 # each original is 4608 x 3456 px
@@ -37,9 +37,9 @@ loop do
 		end
 		xoffset = (rand(1..921) - 1) * 5
 		yoffset = (rand(1..691) - 1) * 5
-		logger.debug f
-		logger.debug xoffset
-		logger.debug yoffset
+		#logger.debug f
+		#logger.debug xoffset
+		#logger.debug yoffset
 		filename = sprintf("ksc-leg-5by5pixel-%6.6d.png", i)
 		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage %s", f, xoffset, yoffset, filename)
 		value = `#{cmd}`
