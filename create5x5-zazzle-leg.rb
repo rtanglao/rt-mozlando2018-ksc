@@ -40,11 +40,11 @@ loop do
 		logger.debug f
 		logger.debug xoffset
 		logger.debug yoffset
-		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage  5x5-ksc.png", f, xoffset, yoffset)
+		filename = sprintf("ksc-leg-5by5pixel-%6.6d.png", i)
+		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage %s", f, xoffset, yoffset, filename)
 		value = `#{cmd}`
 		logger.debug cmd
 		logger.debug value
-		exit
 	end
 	break if exit_program
 end
