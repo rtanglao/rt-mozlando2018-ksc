@@ -42,6 +42,7 @@ loop do
 		logger.debug yoffset
 		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage  5x5-ksc.png", f, xoffset, yoffset)
 		value = `#{cmd}`
+		logger.debug cmd
 		logger.debug value
 		exit
 	end
