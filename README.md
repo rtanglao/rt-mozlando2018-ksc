@@ -1,6 +1,14 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
+## 20January2019 first working version 
+
+```bash
+
+mkdir 5x5-LEG1
+cd !$
+cat ../originals.txt | ../create5x5-zazzle-leg.rb
+```
 ## 20January2019 create file with ls with full pathnames
 
 ```bash
