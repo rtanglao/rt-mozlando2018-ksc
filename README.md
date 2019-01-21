@@ -1,6 +1,12 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
+## 20January2019 create file with ls with full pathnames
+
+```bash
+ls -d1 $PWD/ORIGINALS/* > originals.txt
+```
+
 ## 20January2019 creating a Zazzle / Art of Where tights 3325px x 6358px for one leg
 
 * 3325 / 5 px = 665 rows one way i.e. "horizontally"
