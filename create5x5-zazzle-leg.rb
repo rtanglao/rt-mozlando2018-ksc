@@ -44,7 +44,7 @@ loop do
 		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage %s", f, xoffset, yoffset, filename)
 		value = `#{cmd}`
 		logger.debug cmd
-		logger.debug value
+		logger.debug value if !value.nil?
 	end
 	break if exit_program
 end
