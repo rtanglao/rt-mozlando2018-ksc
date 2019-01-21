@@ -42,9 +42,9 @@ loop do
 		#logger.debug yoffset
 		filename = sprintf("ksc-leg-5by5pixel-%6.6d.png", i)
 		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage %s", f, xoffset, yoffset, filename)
-		value = `#{cmd}`
-		logger.debug cmd
-		logger.debug value if !value.nil?
+		rc = `#{cmd}`
+		rc_cmd = sprintf("RC:%s CMD:%s", rc, cmd)
+		logger.debug rc_cmd
 	end
 	break if exit_program
 end
