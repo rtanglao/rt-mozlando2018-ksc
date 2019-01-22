@@ -12,7 +12,7 @@ cat ../originals.txt | ../create5x5-zazzle-leg.rb
 ## 20January2019 create file with ls with full pathnames
 
 ```bash
-ls -d1 $PWD/ORIGINALS/* > originals.txt
+ls -d1 $PWD/ORIGINALS/*.jpg > originals.txt
 ```
 
 ## 20January2019 creating a Zazzle / Art of Where tights 3325px x 6358px for one leg
