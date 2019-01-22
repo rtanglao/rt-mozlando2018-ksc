@@ -41,6 +41,10 @@ loop do
 		#logger.debug xoffset
 		#logger.debug yoffset
 		filename = sprintf("ksc-leg-5by5pixel-%6.6d.png", i)
+		if File.exist? filename
+			logger.debug(filename + " EXISTS, skipping convert")
+			next
+		end
 		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage %s", f, xoffset, yoffset, filename)
 		rc = `#{cmd}`
 		rc_cmd = sprintf("RC:%s CMD:%s", rc, cmd)
