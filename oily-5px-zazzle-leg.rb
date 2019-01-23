@@ -51,7 +51,7 @@ loop do
   flickr_pic = rand(0..length - 1)
   (xoffset..xoffset + 4).each do |flickrx|
     r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, yoffset
-    output_png[flickrx, yoffset] = ChunkyPNG::Color.rgb r, g, b
+    output_png[flickrx, yoffset] = ChunkyPNG::Color.rgb(r.to_i, g.to_i, b.to_i)
   end
   x += 5
   if x > 920
