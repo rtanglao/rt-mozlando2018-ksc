@@ -54,5 +54,5 @@ loop do
     x = 0
     y += 1
   end
-
-  output_png.write_to_file "out.png"
+end
+output_png.write_to_file "out.png"
