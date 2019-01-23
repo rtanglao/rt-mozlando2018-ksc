@@ -52,8 +52,8 @@ loop do
   (xoffset..xoffset + 4).each do |flickrx|
     r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, yoffset
     output_png[x, y] = ChunkyPNG::Color.rgb(r.to_i, g.to_i, b.to_i)
+    x += 1
   end
-  x += 5
   if x > 920
     logger.debug "NEW ROW"
     x = 0
