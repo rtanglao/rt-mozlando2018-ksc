@@ -42,33 +42,17 @@ loop do
   xoffset = rand(0..920) * 5
   yoffset = rand(0..690) * 5
   flickr_pic = rand(0..length - 1)
+  logger.debug "drawing 5 pixels starting at x:" + x.to_s + " y:" + y.to_s +
+    " r:" + r.to_s + " g:" + g.to_s + " b:" + b.to_s
   (xoffset..xoffset + 4).each do |flickrx|
     r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, yoffset
     output_png = output_png.draw_point [r,g,b], x, y
-    logger.debug "drawing x:" + x.to_s + " y:" +
-      y.to_s + " r:" + r.to_s + " g:" + g.to_s + " b:" + b.to_s
-    x += 5
-    if x > 920
-      logger.debug "NEW ROW"
-      x = 0
-      y += 1
-    end
   end
-end
+  x += 5
+  if x > 920
+    logger.debug "NEW ROW"
+    x = 0
+    y += 1
+  end
 
-output_png.write_to_file "out.png"
-# 		#logger.debug f
-# 		#logger.debug xoffset
-# 		#logger.debug yoffset
-# 		filename = sprintf("ksc-leg-5by5pixel-%6.6d.png", i)
-# 		if File.exist? filename
-# 			logger.debug(filename + " EXISTS, skipping convert")
-# 			next
-# 		end
-# 		cmd = sprintf("convert %s -crop 5x5+%d+%d  +repage %s", f, xoffset, yoffset, filename)
-# 		rc = `#{cmd}`
-# 		rc_cmd = sprintf("RC:%s CMD:%s", rc, cmd)
-# 		logger.debug rc_cmd
-# 	end
-# 	break if exit_program
-# end
+  output_png.write_to_file "out.png"
