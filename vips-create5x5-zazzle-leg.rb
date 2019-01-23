@@ -35,6 +35,7 @@ x = 0
 y = 0
 loop do
   i += 5
+  logger.debug "i:" + i.to_s
   if i > 847210
     break
   end
