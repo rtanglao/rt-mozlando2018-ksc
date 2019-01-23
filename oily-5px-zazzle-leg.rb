@@ -60,4 +60,4 @@ loop do
     y += 1
   end
 end
-output_png.write_to_file "oily-out.png"
+output_png.save "oily-out.png", :interlace => true
