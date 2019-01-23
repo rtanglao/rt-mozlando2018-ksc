@@ -10,7 +10,8 @@ require 'vips'
 logger = Logger.new(STDERR)
 logger.level = Logger::DEBUG
 
-output_png = Vips::Image.black 3325, 6370
+output_png = Vips::Image.black 3325, 6360
+num_pixels = 3325 * 6360
 
 originals_from_flickr = []
 ARGF.each_line do |file|
@@ -36,7 +37,7 @@ y = 0
 loop do
   i += 5
   logger.debug "i:" + i.to_s
-  if i > 847210
+  if i > num_pixels
     break
   end
   xoffset = rand(0..920) * 5
