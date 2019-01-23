@@ -44,8 +44,11 @@ loop do
   (xoffset..xoffset + 4).each do |flickrx|
     r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, yoffset
     output_png = output_png.draw_point [r,g,b], x, y
-    x += 1
+    logger.debug "drawing x:" + x.to_s + " y:" +
+      y.to_s + " r:" + r.to_s + " g:" + g.to_s + " b:" + b.to_s
+    x += 5
     if x > 920
+      logger.debug "NEW ROW"
       x = 0
       y += 1
     end
