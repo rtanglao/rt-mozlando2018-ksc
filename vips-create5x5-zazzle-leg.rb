@@ -23,7 +23,7 @@ logger.debug "number of flickr pics:" + length.to_s
 #logger.debug files[0]
 #logger.debug files[-1]
 # 3325 / 5 px = 665 rows one way i.e. "horizontally"
-# 6358 -> 6370 / 5 px = 1274 rows the other way "vertically"
+# 6358 -> 6360 / 5 px = 1272 rows the other way "vertically"
 # each original is 4608 x 3456 px
 # round down to 4605 x 3455 px
 
