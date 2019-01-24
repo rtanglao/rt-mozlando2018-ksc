@@ -59,7 +59,7 @@ loop do
     x = 0
     y += 1
     interim_filename = sprintf("interim-oily-out-row:%4.4d.png", y-1)
-    output_png.save filename, :interlace => true
+    output_png.save interim_filename, :interlace => true
   end
 end
 output_png.save "final-oily-out.png", :interlace => true
