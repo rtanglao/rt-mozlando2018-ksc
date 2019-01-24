@@ -54,10 +54,12 @@ loop do
     output_png[x, y] = ChunkyPNG::Color.rgb(r.to_i, g.to_i, b.to_i)
     x += 1
   end
-  if x > 920
+  if x ==  artofwhere_width
     logger.debug "NEW ROW"
     x = 0
     y += 1
+    interim_filename = sprintf("interim-oily-out-row:%4.4d.png", y-1)
+    output_png.save filename, :interlace => true
   end
 end
-output_png.save "oily-out.png", :interlace => true
+output_png.save "final-oily-out.png", :interlace => true
