@@ -43,13 +43,14 @@ loop do
   if i > num_pixels
     break
   end
-  xoffset = rand(0..460) * 10
-  yoffset = rand(0..345) * 10
+  xoffset = rand(0..459) * 10
+  yoffset = rand(0..344) * 10
   flickr_pic = rand(0..length - 1)
   row_y = y
   (yoffset..yoffset + 9).each do |flickry|
     row_x = x
     (xoffset..xoffset + 9).each do |flickrx|
+      #logger.debug "extract area:" + flickrx.to_s + "," + flickry.to_s
       r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, flickry
       output_png[row_x, row_y] = ChunkyPNG::Color.rgb(r.to_i, g.to_i, b.to_i)
       row_x += 1
