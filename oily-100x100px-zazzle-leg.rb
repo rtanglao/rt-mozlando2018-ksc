@@ -9,8 +9,8 @@ require 'oily_png'
 logger = Logger.new(STDERR)
 logger.level = Logger::DEBUG
 
-artofwhere_width = 3330
-artofwhere_length = 6360
+artofwhere_width =  3400
+artofwhere_length = 6400
 output_png =
   ChunkyPNG::Image.new(
     artofwhere_width, artofwhere_length,
@@ -26,15 +26,14 @@ length = originals_from_flickr.length
 logger.debug "number of flickr pics:" + length.to_s
 #logger.debug files[0]
 #logger.debug files[-1]
-# 3330 / 10 px = 333 rows one way i.e. "horizontally"
-# 6358 -> 6360 / 10 px = 636 rows the other way "vertically"
+# 3400 / 10 px = 34 rows one way i.e. "horizontally"
+# 6358 -> 6400 / 10 px = 64 rows the other way "vertically"
 # each original is 4608 x 3456 px
-# round down to 4600 x 3450 px
+# round down to 4600 x 3400 px
 
-#     which means there are 460 ten pixel columns horizontally
-#     and 345 ten pixel rows vertically
+#     which means there are 46 ten pixel columns horizontally
+#     and 34 ten pixel rows vertically
 
-# which means the script needs to pick 847210 (665 * 1274) random 5px x 5x patches
 i = 0
 x = 0
 y = 0
@@ -43,28 +42,28 @@ loop do
   if i > num_pixels
     break
   end
-  xoffset = rand(0..460) * 10
-  yoffset = rand(0..345) * 10
+  xoffset = rand(0..46) * 100
+  yoffset = rand(0..34) * 100
   flickr_pic = rand(0..length - 1)
   row_y = y
-  (yoffset..yoffset + 9).each do |flickry|
+  (yoffset..yoffset + 99).each do |flickry|
     row_x = x
-    (xoffset..xoffset + 9).each do |flickrx|
+    (xoffset..xoffset + 99).each do |flickrx|
       r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, flickry
       output_png[row_x, row_y] = ChunkyPNG::Color.rgb(r.to_i, g.to_i, b.to_i)
       row_x += 1
     end
     row_y += 1
   end
-  x += 10
+  x += 100
   if x == artofwhere_width
     logger.debug "NEW ROW"
     x = 0
-    y += 10
-    next if y % 10 != 0
-    interim_filename = sprintf("interim-10px10px-oily-out-row-%4.4d.png", y-10)
+    y += 100
+    next if y % 2 != 0
+    interim_filename = sprintf("interim-100x100-oily-out-row-%4.4d.png", y-100)
     output_png.save interim_filename, :interlace => true
   end
-  i += 100
+  i += 10000
 end
-output_png.save "oily-10px10px-out.png", :interlace => true
+output_png.save "oily-100x100-out.png", :interlace => true
