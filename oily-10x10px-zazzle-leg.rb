@@ -63,7 +63,7 @@ loop do
     x = 0
     y += 10
     next if y % 10 != 0
-    interim_filename = sprintf("interim-10x10-oily-out-row:%4.4d.png", y-10)
+    interim_filename = sprintf("interim-10x10-oily-out-row-%4.4d.png", y-10)
     output_png.save interim_filename, :interlace => true
   end
 end
