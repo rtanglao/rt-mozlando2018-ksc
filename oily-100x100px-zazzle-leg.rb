@@ -39,7 +39,7 @@ x = 0
 y = 0
 loop do
   logger.debug "i:" + i.to_s
-  if i > num_pixels
+  if i >= num_pixels
     break
   end
   xoffset = rand(0..45) * 100
@@ -62,9 +62,15 @@ loop do
     x = 0
     y += 100
     next if y % 2 != 0
-    interim_filename = sprintf("interim-100x100-oily-out-row-%4.4d.png", y-100)
+    t = Time.now
+    interim_filename = sprintf(
+      "%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-interim-100x100-oily-out-row-%4.4d.png", \
+      t.year, t.month, t.day, t.hour, t.minute,
+      y-100)
     output_png.save interim_filename, :interlace => true
   end
   i += 10000
 end
-output_png.save "oily-100x100-out.png", :interlace => true
+filename = sprintf("%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-oily-100x100-out.png",
+  t.year, t.month, t.day,  t.hour, t.minute)
+output_png.save filename, :interlace => true
