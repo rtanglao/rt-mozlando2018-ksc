@@ -65,12 +65,12 @@ loop do
     t = Time.now
     interim_filename = sprintf(
       "%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-interim-100x100-oily-out-row-%4.4d.png", \
-      t.year, t.month, t.day, t.hour, t.minute,
+      t.year, t.month, t.day, t.hour, t.min,
       y-100)
     output_png.save interim_filename, :interlace => true
   end
   i += 10000
 end
 filename = sprintf("%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-oily-100x100-out.png",
-  t.year, t.month, t.day,  t.hour, t.minute)
+  t.year, t.month, t.day,  t.hour, t.min)
 output_png.save filename, :interlace => true
