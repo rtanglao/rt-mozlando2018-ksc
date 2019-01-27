@@ -71,6 +71,7 @@ loop do
   end
   i += 10000
 end
+t = Time.now
 filename = sprintf("%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-oily-100x100-out.png",
   t.year, t.month, t.day,  t.hour, t.min)
 output_png.save filename, :interlace => true
