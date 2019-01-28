@@ -70,7 +70,7 @@ loop do
       y-200)
     output_png.save interim_filename, :interlace => true
   end
-  i += 20000
+  i += 40000
 end
 t = Time.now
 filename = sprintf("%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-oily-200x200-out.png",
