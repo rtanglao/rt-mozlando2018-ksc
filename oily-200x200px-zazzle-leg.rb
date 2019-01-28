@@ -24,8 +24,7 @@ ARGF.each_line do |file|
 end
 length = originals_from_flickr.length
 logger.debug "number of flickr pics:" + length.to_s
-#logger.debug files[0]
-#logger.debug files[-1]
+
 # 3400 / 200 px = 17 rows one way i.e. "horizontally"
 # 6358 -> 6400 / 200 px = 32 rows the other way "vertically"
 # each original is 4608 x 3456 px
@@ -37,6 +36,7 @@ logger.debug "number of flickr pics:" + length.to_s
 i = 0
 x = 0
 y = 0
+num_rows = 0
 loop do
   logger.debug "i:" + i.to_s
   if i >= num_pixels
@@ -61,15 +61,16 @@ loop do
     logger.debug "NEW ROW"
     x = 0
     y += 200
-    next if y % 2 != 0
+    num_rows += 1
+    next if num_rows % 2 == 0
     t = Time.now
     interim_filename = sprintf(
       "%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-interim-200x200-oily-out-row-%4.4d.png", \
       t.year, t.month, t.day, t.hour, t.min,
-      y-100)
+      y-200)
     output_png.save interim_filename, :interlace => true
   end
-  i += 10000
+  i += 20000
 end
 t = Time.now
 filename = sprintf("%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-oily-200x200-out.png",
