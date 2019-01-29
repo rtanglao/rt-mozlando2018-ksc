@@ -53,6 +53,7 @@ loop do
       r, g, b = originals_from_flickr[flickr_pic].getpoint flickrx, flickry
       output_png[row_x, row_y] = ChunkyPNG::Color.rgb(r.to_i, g.to_i, b.to_i)
       row_x += 1
+      i += 1
     end
     row_y += 1
   end
@@ -70,7 +71,6 @@ loop do
       y-200)
     output_png.save interim_filename, :interlace => true
   end
-  i += 40000
 end
 t = Time.now
 filename = sprintf("%4.4d-%2.2d-%2.2d-%2.2d-%2.2d-oily-200x200-out.png",
