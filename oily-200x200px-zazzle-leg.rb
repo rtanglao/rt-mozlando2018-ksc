@@ -39,7 +39,7 @@ y = 0
 num_rows = 0
 loop do
   logger.debug "i:" + i.to_s
-  if i >= num_pixels
+  if i >= num_pixels || y >= artofwhere_length
     break
   end
   xoffset = rand(0..22) * 200
