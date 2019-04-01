@@ -1,5 +1,5 @@
 # see http://rolandtanglao.com/2019/03/31/p1-use-hatching-to-create-fun-infographics-for-tshirts/
-# whick links to:
+# which links to:
 # https://jef.works/art-with-code/portfolio/20190301_hatching/
 #' Hatching photo filter
 #'
