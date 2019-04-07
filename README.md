@@ -1,6 +1,15 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
+## 07April2019 make run 2 6400 hatched zazzle
+
+```bash
+cd /home/roland/GIT/rt-mozlando2018-ksc/RUN2_HATCHED_ZAZZLE
+../6400-hatched-art-of-where.rb
+```
+
+* output is https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/RUN2_HATCHED_ZAZZLE/hatched-2019-04-07-09-42-oily-200x200-out.png
+
 ## 06April2019 make 6400 hatched zazzle
 
 ```bash
