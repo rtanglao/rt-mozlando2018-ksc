@@ -10,6 +10,14 @@ img <- readJPEG("/home/roland/GIT/rt-mozlando2018-ksc/TRY2-200x200OILY/2019-01-3
 hatching(img, size=0.1, var=0.5, N=10000, pch=0, step=0.01)
 ```
 
+### 06April2019 Output
+
+* https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/6400px-wide-hatched-2019-01-31-05-36-oily-200x200-out.png
+https://www.flickr.com/photos/roland/33676536488/in/
+
+<a data-flickr-embed="true"  href="https://www.flickr.com/photos/roland/46637519345/in/dateposted-ff/" title="hatched2-200px-x-200-px-rni-films-processing-of-flic.kr-So3kZ1"><img src="https://live.staticflickr.com/7907/46637519345_cdb6704927.jpg" width="500" height="414" alt="hatched2-200px-x-200-px-rni-films-processing-of-flic.kr-So3kZ1"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+
 ## 31March2019 try hatching from Jean Fan's code
 
 ```bash
