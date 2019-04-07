@@ -1,9 +1,17 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
+## 06April2019 make 6400 hatched zazzle
+
+
 ## 06April2019 save to 6400
 
-```r
+```bash
+cd /home/roland/GIT/rt-mozlando2018-ksc/HATCHED_ZAZZLE
+../6400-hatched-art-of-where.rb
+# output is  hatched-2019-04-06-21-27-oily-200x200-out.png
+```
+
 setwd("~/GIT/rt-mozlando2018-ksc")
 source("hatching.R")
 img <- readJPEG("/home/roland/GIT/rt-mozlando2018-ksc/TRY2-200x200OILY/2019-01-31-05-36-oily-200x200-out.jpg")
