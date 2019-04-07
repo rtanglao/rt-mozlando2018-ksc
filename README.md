@@ -11,6 +11,7 @@ cd /home/roland/GIT/rt-mozlando2018-ksc/HATCHED_ZAZZLE
 
 ## 06April2019 save to 6400
 
+```r
 setwd("~/GIT/rt-mozlando2018-ksc")
 source("hatching.R")
 img <- readJPEG("/home/roland/GIT/rt-mozlando2018-ksc/TRY2-200x200OILY/2019-01-31-05-36-oily-200x200-out.jpg")
