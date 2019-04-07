@@ -1,6 +1,15 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
+## 06April2019 save to 6400
+
+```r
+setwd("~/GIT/rt-mozlando2018-ksc")
+source("hatching.R")
+img <- readJPEG("/home/roland/GIT/rt-mozlando2018-ksc/TRY2-200x200OILY/2019-01-31-05-36-oily-200x200-out.jpg")
+hatching(img, size=0.1, var=0.5, N=10000, pch=0, step=0.01)
+```
+
 ## 31March2019 try hatching from Jean Fan's code
 
 ```bash
