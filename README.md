@@ -11,7 +11,7 @@ cd /home/roland/GIT/rt-mozlando2018-ksc/RUN2_HATCHED_ZAZZLE
 ../4000px-square-allover-makevancouver-shirt.rb 
 ```
 
-* output: https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/RUN2_HATCHED_ZAZZLE/hatched-makevancouver-2019-04-20-12-02-oily-200x200-out.png <--- which I will use for the front
+* output: https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/RUN2_HATCHED_ZAZZLE/hatched-makevancouver-2019-04-20-12-02-oily-200x200-out.png <--- which I will use for the **front**
 
 * to make the **back** of the all over tshirt
 
@@ -19,7 +19,7 @@ cd /home/roland/GIT/rt-mozlando2018-ksc/RUN2_HATCHED_ZAZZLE
 cd /home/roland/GIT/rt-mozlando2018-ksc/RUN2_HATCHED_ZAZZLE
 ../4000px-square-allover-makevancouver-shirt.rb 
 ```
-
+* output: https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/RUN2_HATCHED_ZAZZLE/hatched-makevancouver-2019-04-20-23-02-oily-200x200-out.png <--- which I will use for the **back**
 
 ## 07April2019 make run 2 6400 hatched zazzle
 
