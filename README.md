@@ -4,13 +4,21 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 ## 20April2019 MakeVancouver All over 4000 px by 4000 px tshirt
 
 * 16inches  at 250 dot per inch = 16 * 250 = 4000 pixels
+* to make the **front** of the all over tshirt
 
 ```bash
 cd /home/roland/GIT/rt-mozlando2018-ksc/RUN2_HATCHED_ZAZZLE
 ../4000px-square-allover-makevancouver-shirt.rb 
 ```
 
-* output: https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/RUN2_HATCHED_ZAZZLE/hatched-makevancouver-2019-04-20-12-02-oily-200x200-out.png
+* output: https://github.com/rtanglao/rt-mozlando2018-ksc/blob/master/RUN2_HATCHED_ZAZZLE/hatched-makevancouver-2019-04-20-12-02-oily-200x200-out.png <--- which I will use for the front
+
+* to make the **back** of the all over tshirt
+
+```bash
+cd /home/roland/GIT/rt-mozlando2018-ksc/RUN2_HATCHED_ZAZZLE
+../4000px-square-allover-makevancouver-shirt.rb 
+```
 
 
 ## 07April2019 make run 2 6400 hatched zazzle
