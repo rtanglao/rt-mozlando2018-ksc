@@ -1,6 +1,13 @@
 # rt-mozlando2018-ksc
 Mozlando 2018 kennedy space center tshirts and other stuff :-)
 
+## 16June2019 Badge images
+
+```bash
+/home/roland/GIT/rt-mozlando2018-ksc/264x176
+parallel convert {} -resize 264x176! 264x176-{/.}.png ::: ../ORIGINALS/*.jpg     
+```
+
 ## 20April2019 MakeVancouver All over 4000 px by 4000 px tshirt
 
 * 16inches  at 250 dot per inch = 16 * 250 = 4000 pixels
