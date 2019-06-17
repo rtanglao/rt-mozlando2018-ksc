@@ -4,8 +4,10 @@ Mozlando 2018 kennedy space center tshirts and other stuff :-)
 ## 16June2019 Badge images
 
 ```bash
-/home/roland/GIT/rt-mozlando2018-ksc/264x176
-parallel convert {} -resize 264x176! 264x176-{/.}.png ::: ../ORIGINALS/*.jpg     
+cd /home/roland/GIT/rt-mozlando2018-ksc/264x176
+parallel convert {} -resize 264x176! 264x176-{/.}.png ::: ../ORIGINALS/*.jpg    
+mkdir MONOCHROME ; cd !$
+parallel convert {} -monochrome monochrome-{/.}.gif ::: ../*.png
 ```
 
 ## 20April2019 MakeVancouver All over 4000 px by 4000 px tshirt
